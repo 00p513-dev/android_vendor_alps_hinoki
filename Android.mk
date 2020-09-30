@@ -19,61 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),hinoki)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := AptxNotifier
-LOCAL_MODULE_OWNER := alps
-LOCAL_SRC_FILES := proprietary/app/AptxNotifier/AptxNotifier.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := AptxNotifier
-LOCAL_MODULE_OWNER := alps
-LOCAL_SRC_FILES := proprietary/app/AptxNotifier/oat/arm/AptxNotifier.odex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .odex
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := AptxNotifier
-LOCAL_MODULE_OWNER := alps
-LOCAL_SRC_FILES := proprietary/app/AptxNotifier/oat/arm/AptxNotifier.vdex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .vdex
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := AptxNotifier
-LOCAL_MODULE_OWNER := alps
-LOCAL_SRC_FILES := proprietary/app/AptxNotifier/oat/arm64/AptxNotifier.odex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .odex
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := AptxNotifier
-LOCAL_MODULE_OWNER := alps
-LOCAL_SRC_FILES := proprietary/app/AptxNotifier/oat/arm64/AptxNotifier.vdex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .vdex
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := AutoDialer
 LOCAL_MODULE_OWNER := alps
 LOCAL_SRC_FILES := proprietary/vendor/app/AutoDialer/AutoDialer.apk
